@@ -6,7 +6,106 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery.js"></script>
     <title>Crystal Collector</title>
   </head>
-  <body></body>
+  <body>
+    <!-- main container -->
+    <div class="container-fluid" id="mainBox">
+      <!-- header -->
+      <div class="jumbotron">
+        <h1 class="text-center">Crystals Collector</h1>
+
+        <h2 class="text-center">How to Play</h2>
+
+        <p class="text-center">
+          You will be given a random number at the start of the game. Use the
+          crystals to match your points to the random number. The value of the
+          crystals changes for every game and you must figure out their values
+          on your own.
+        </p>
+        <p class="text-center">
+          Match your points to the random number to win. If you go over, you
+          lose!
+        </p>
+      </div>
+
+      <!-- game section -->
+      <div class="row" id="gameSection">
+        <!-- first column for random number -->
+        <div class="col-md-3" id="numberSection">
+          <h3 class="text-center" id="random">Match Number:</h3>
+          <h1 class="numberBox text-center" id="randomNumber">120</h1>
+        </div>
+
+        <!-- second column for buttons -->
+        <div class="col-md-6 text-center" id="buttonSection">
+          <!-- first crystal -->
+          <button id="button-1" value="0">
+            <img
+              src="assets/images/diamond-3.png"
+              class="img-responsive icons"
+              id="icon1"
+            />
+          </button>
+
+          <!-- second crystal -->
+          <button id="button-2" value="0">
+            <img
+              src="assets/images/diamond-6.png"
+              class="img-responsive icons"
+              id="icon2"
+            />
+          </button>
+
+          <!-- third crystal -->
+          <button id="button-3" value="0">
+            <img
+              src="assets/images/diamond-7.png"
+              class="img-responsive icons"
+              id="icon3"
+            />
+          </button>
+
+          <!-- fourth crystal -->
+          <button id="button-4" value="0">
+            <img
+              src="assets/images/diamond-8.png"
+              class="img-responsive icons"
+              id="icon4"
+            />
+          </button>
+        </div>
+
+        <!-- third column for total points -->
+        <div class="col-md-3" id="totalPoints">
+          <h3 class="text-center" id="score">Your Total Score:</h3>
+          <h1 class="numberBox text-center" id="totalNumber">0</h1>
+        </div>
+      </div>
+
+      <!-- footer section with tracking wins and losses -->
+      <div class="row" id="scoreSection">
+        <!-- spacer column -->
+        <div class="col-md-4"></div>
+
+        <!-- wins column -->
+        <div class="col-md-2" id="winSection">
+          <h3 class="text-center" id="wins">Wins: 0</h3>
+        </div>
+
+        <!-- losses column -->
+        <div class="col-md-2" id="lossSection">
+          <h3 class="text-center" id="losses">Losses: 0</h3>
+        </div>
+
+        <!-- spacer column -->
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,55 @@
+/*font-family: 'Lobster Two', cursive;*/
+
+/* Backgrounds */
+body {
+  background-image: url("../images/background.jpg");
+}
+
+.jumbotron {
+  background-color: #ffffff;
+}
+
+#gameSection,
+#scoreSection {
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*FOR TESTING*/
+/*#numberSection, #totalPoints {
+	background-color: orange;
+}*/
+
+#buttonSection {
+  /*background-color: yellow;*/
+  padding: 0px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+/* Fonts */
+h1,
+h2,
+h3 {
+  font-family: "Alfa Slab One", cursive;
+}
+
+p {
+  font-family: "Ek Mukta", sans-serif;
+}
+
+.numberBox {
+  font-size: 100px;
+  margin: 0px;
+}
+
+/* images for buttons */
+.icons {
+  display: inline-block;
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
