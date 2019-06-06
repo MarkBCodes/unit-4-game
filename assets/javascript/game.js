@@ -84,6 +84,7 @@ $(document).ready(function() {
   $("#button-1").on("click", function() {
     totalScore += c1;
     $("#totalNumber").html(totalScore);
+    console.log("hit");
   });
 
   $("#button-2").on("click", function() {
